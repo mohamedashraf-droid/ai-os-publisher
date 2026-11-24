@@ -8,24 +8,30 @@
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p><em>Last updated: 14 November 2026</em></p>
-<p>AI OS Publisher ("the app") is a private tool used only by its owner, on the owner's own computer, to upload the owner's own videos to the owner's own YouTube channels.</p>
+<p><em>Last updated: 25 November 2026</em></p>
+<p>AI OS Publisher ("the app") is a private tool. Only its owner uses it, on the owner's own computer, to upload the owner's own videos and images to the owner's own accounts on YouTube, TikTok, Facebook and Instagram.</p>
 <h2>What the app accesses</h2>
 <ul>
-<li>When the owner signs in with Google, the app receives permission to manage videos on that YouTube channel (YouTube Data API).</li>
-<li>It uses this permission only to upload the owner's videos and set their title, description and publish time.</li>
+<li><strong>YouTube (Google):</strong> when the owner signs in with Google, the app gets permission to manage videos on that YouTube channel (YouTube Data API). It uses this only to upload the owner's videos and set their title, description and publish time.</li>
+<li><strong>TikTok:</strong> when the owner signs in with TikTok, the app gets the scopes <code>user.info.basic</code> (the account's basic profile, to confirm which account is connected) and <code>video.upload</code> (to send videos to the owner's TikTok inbox as drafts). The owner publishes each draft by hand.</li>
+<li><strong>Facebook and Instagram (Meta):</strong> the app uses an access token for the owner's own Facebook Page and its linked Instagram account. It uses it only to publish posts the owner approved and to check that they went live.</li>
 </ul>
 <h2>What the app does not do</h2>
 <ul>
 <li>It does not collect, sell or share any personal data.</li>
 <li>It does not access any other person's account or data. No one else can sign up.</li>
-<li>It does not send data to any third party other than Google/YouTube, which is needed to upload the videos.</li>
+<li>It sends data only to the platform a post is going to (Google/YouTube, TikTok or Meta), because that is needed to upload it.</li>
 </ul>
 <h2>Storage</h2>
-<p>Sign-in tokens are stored only on the owner's computer, encrypted by the automation software (n8n). The owner can remove the app's access at any time from their Google Account (Security &gt; Third-party apps with account access).</p>
-<p>The app's use of information received from Google APIs follows the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>. YouTube is covered by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<p>Sign-in tokens are stored only on the owner's computer, inside the automation software (n8n). They are never published or shared. The owner can remove the app's access at any time:</p>
+<ul>
+<li>Google: Google Account &gt; Security &gt; Third-party apps with account access.</li>
+<li>TikTok: Settings and privacy &gt; Security &gt; Manage app permissions.</li>
+<li>Facebook: Settings &gt; Business integrations.</li>
+</ul>
+<p>The app's use of information received from Google APIs follows the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>. See also the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, the <a href="https://www.tiktok.com/legal/page/global/privacy-policy/en">TikTok Privacy Policy</a> and the <a href="https://www.facebook.com/privacy/policy">Meta Privacy Policy</a>.</p>
 <h2>Contact</h2>
 <p>Questions: open an issue at <a href="https://github.com/mohamedashraf-droid/ai-os-publisher/issues">github.com/mohamedashraf-droid/ai-os-publisher</a>.</p>
-<p><a href="index.html">Home</a></p>
+<p><a href="index.html">Home</a> · <a href="terms.html">Terms of Service</a></p>
 </body>
 </html>
